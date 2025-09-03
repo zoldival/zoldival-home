@@ -6,24 +6,46 @@
     <link rel="stylesheet" href="landingpage.css"> <!-- Links external stylesheet (CSS for design and layout) -->
     <title>zoldival's spawn</title> <!-- Sets the title of the webpage -->
     <link rel="icon" href="images/metastar.png" type="image/x-icon"> <!-- Sets the favicon for the webpage -->
-    <script src="javascript.js"></script>
+    <script src="javascript.js"></script>   <!-- Loads jQuery library (used for easier JS manipulation of the DOM) -->
 </head>
 
 <body>
     <div class="backgroundContainer">
-      <picture id="background">
+        <!-- Background Image Which is Filler for Right Now -->
+      <picture id="background"> 
     <source media="(max-width: 800px)" srcset="images/silenthillheavensnight.jpg">
     <img src="images/silenthillheavensnight.jpg" alt="Background Image" class="bg-img">
         </picture>
-
+         <!-- Background music (looped, controlled by JS later) -->
         <audio id="backgroundMusic" autoplay loop>
             <source src="audio/alsosprachbrooks.mp3" type="audio/mp3">
         </audio>    
     </div>
-
+       <!-- Navigation header bar -->
     <div class = "headerBar">
+        <!-- Logo that links to homepage -->
         <div class = "leftBarContainer">
-            <a
+            <a class = "logoContainer"href.html> <!-- Logo that links to homepage -->
+                <img src="images/metastar.png" alt="Logo" class="logoImage">
+            </a>
+            </div>
+         <div class="intro">   
+            <h1>Hello, my name is Zoldival!</h1> 
+            <p>I am a 19 year old video editor and programmer currently working towards my degree in Computer Science at UC Santa Cruz as a second year.</p>
+            <p>I have a passion for creating content and sharing it with the world.</p>
+            <p>Below you can find my platforms which you can find and contact me on.</p>
         </div>
-    </div>
-
+</body>
+        <div class="social-boxes">
+            <a href="https://youtube.com/@zoldival" class="social-box youtube" target="_blank">
+                <img src="images/youtubelogo.png" alt="YouTube Logo" class="spin">
+                
+            </a>
+            <a href="github.com/zoldival" class="social-box github" target="_blank">
+                <img src="images/githublogo.png" alt="GitHub Logo" class="spin">
+                
+            </a>
+            <a href="https://www.roblox.com/users/106668934/profile" class="social-box roblox" target="_blank">
+                <img src="images/robloxlogo.png" alt="Roblox Logo" class="spin">
+            </div>        
+            

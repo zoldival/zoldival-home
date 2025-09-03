@@ -3,8 +3,35 @@ html {
     min-height: 100%;
 }
 
-body {
-    margin: 0;
+.intro {
+  font-family: 'Inter', sans-serif; /* clean readable font */
+  color: #fff;
+  max-width: 800px;
+  margin: 8em auto 0 auto; /* center with top spacing */
+  padding: 1.5em;
+  background: rgba(0, 0, 0, 0.5); /* translucent dark box */
+  border-radius: 1em;
+  text-align: center;
+  line-height: 1.6em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); /* glow for readability */
+
+}
+
+ .intro h1 {
+    font-family: 'Montserrat', sans-serif; /* bold, modern font for headings */
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+ }
+    .intro p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+.logoImage {
+  width: 150px;   /* Shrinks the width */
+  height: auto;   /* Keeps aspect ratio */
 }
 
 .bg-img {
@@ -16,4 +43,55 @@ body {
     left: 0;
     filter: brightness(1.2);
     z-index: -2;
+}
+
+/* Container for all social links */
+.social-boxes {
+  display: flex;             /* makes children horizontal by default */
+  justify-content: center;   /* center the row */
+  gap: 60px;                 /* space between each box */
+  margin-top: 25px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Each social link box */
+.social-box {
+  display: flex;
+  flex-direction: column;    /* stack image above text inside the box */
+  align-items: center;       /* center image + text */
+  text-decoration: none;     
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  transition: transform 0.2s;
+  box-shadow: 2cm 2cm 3cm rgba(0, 0, 0, 0.5);
+}
+
+
+.social-box img {
+  width: 240px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.social-box:hover {
+  transform: scale(1.1);
+}
+
+@keyframes rock {
+  0% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(-15deg); }
+}
+
+.social-box img {
+  width: 100px; 
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s; 
+}
+
+.social-box:hover img {
+  animation: rock 0.5s infinite; 
+  transform-origin: center; 
 }
